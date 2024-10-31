@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Grimm aus Stetten</title>
+    <style>
+        /* Grundlegendes CSS-Design */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .images {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .images img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact {
+            background-color: #eaeaea;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .contact label {
+            margin: 0.5rem 0 0.2rem;
+            font-weight: bold;
+        }
+        
+        .contact input, .contact textarea {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .contact button {
+            margin-top: 1rem;
+            padding: 0.7rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .contact button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Willkommen auf der Webseite von Aaron Grimm</h1>
+</header>
+
+<div class="container">
+    <!-- Vorstellung -->
+    <section class="intro">
+        <h2>Über mich</h2>
+        <p>Hallo! Mein Name ist Aaron Grimm und ich komme aus Stetten. Ich bin leidenschaftlich in verschiedenen Bereichen tätig und freue mich, meine Projekte und Arbeiten hier zu präsentieren. Schauen Sie sich um und lernen Sie mich besser kennen.</p>
+    </section>
+
+    <!-- Bildergalerie -->
+    <section class="gallery">
+        <h2>Galerie</h2>
+        <div class="images">
+            <img src="bild1.jpg" alt="Beispielbild 1">
+            <img src="bild2.jpg" alt="Beispielbild 2">
+            <img src="bild3.jpg" alt="Beispielbild 3">
+        </div>
+    </section>
+
+    <!-- Kontaktformular -->
+    <section class="contact">
+        <h2>Kontakt</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>
